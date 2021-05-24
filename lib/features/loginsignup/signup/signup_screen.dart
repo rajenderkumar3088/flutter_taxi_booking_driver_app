@@ -11,7 +11,6 @@ import 'package:flutter_taxi_booking_driver_app/widgets/password_textfield.dart'
 import 'package:flutter_taxi_booking_driver_app/widgets/square_textfield_widget.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/viit_appbar.dart';
 
-
 import 'bloc/bloc.dart';
 
 class SignupScreen extends StatelessWidget {
@@ -32,8 +31,8 @@ class Signup extends StatefulWidget {
 }
 
 class _SignupState extends State<Signup> {
-  var _isCheckedVittTeen = false;
-  var _isCheckedRide = false;
+  // var _isCheckedVittTeen = false;
+  // var _isCheckedRide = false;
   var _isCheckedTerms = false;
   var _isAcceptViitTeen = true;
   var _isRideForHandicap = false;

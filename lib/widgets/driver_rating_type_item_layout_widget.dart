@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/driver_container_widget.dart';
 
-
-
 class DriverRatingTypeItemLayoutWidget extends StatelessWidget {
   final String ratingCategoryTxt;
   final String rateMarkingTxt;
@@ -63,7 +61,7 @@ class DriverRatingTypeItemLayoutWidget extends StatelessWidget {
                 right: 15,
               ),
               child: Text(
-                "${rateMarkingTxt}",
+                "$rateMarkingTxt",
                 style: Theme.of(context).textTheme.caption.copyWith(
                       color: Color(0xff275787),
                       fontSize: 22,

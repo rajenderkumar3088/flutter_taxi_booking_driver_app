@@ -4,13 +4,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_taxi_booking_driver_app/app_translations_delegate.dart';
 import 'package:flutter_taxi_booking_driver_app/application.dart';
-import 'package:flutter_taxi_booking_driver_app/common/my_colors.dart';
 import 'package:flutter_taxi_booking_driver_app/common/my_const.dart';
 import 'package:flutter_taxi_booking_driver_app/common/my_theme.dart';
-import 'package:flutter_taxi_booking_driver_app/common/viiticons_icons.dart';
 import 'package:flutter_taxi_booking_driver_app/features/language/language_screen.dart';
 import 'package:flutter_taxi_booking_driver_app/route_generator.dart';
-
 
 import 'bloc/bloc.dart';
 
@@ -163,232 +160,232 @@ class _LandingState extends State<Landing> {
     );
   }
 
-  _buildTempleWidgetsDemo() {
-    return SingleChildScrollView(
-      child: Container(
-        width: 120,
-        child: Column(
-          children: <Widget>[
-            /*ViitAppBar(
-              leadingWidget: ViitAppBarIconWidget(),
-              titleWidget: ViitTitleWidget("Add Favorite Address"),
-              onLeadingPressed: () {
-                Navigator.of(context).pop();
-              },
-              isActionWidget: true,
-              actionWidget: ViitAppBarIconWidget(
-                viitAppBarIconType: ViitAppBarIconTypes.ICON,
-                myLeadingIcon: Icon(
-                  CupertinoIcons.delete_solid,
-                  color: Colors.white,
-                  size: 28,
-                ),
-                bgColor: Colors.transparent,
-              ),
-              onActionPressed: () {
-                print("Press in action icon");
-              },
-            ),
-            ViitAppBarIconWidget(
-              viitAppBarIconType: ViitAppBarIconTypes.ICON,
-              myLeadingIcon: Icon(
-                Icons.menu,
-                color: Colors.white,
-              ),
-              bgColor: kPrimaryColor,
-              iconColor: Colors.white,
-            ),
-            LanguageButton(
-              btnTxt: "English",
-              btnColor: kAccentColor,
-              btnOnTap: () {
-                print("");
-              },
-            ),
-            SizedBox(
-              height: 12,
-            ),
-            LanguageButton(
-              btnTxt: "French",
-              btnOnTap: () {
-                print("");
-              },
-              isShowIcon: true,
-            ),
-            SocialMediaWidget(
-              assetPath: "assets/google.png",
-              bgColor: kSocialBg,
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            FABButton(
-              bgColor: kAccentColor,
-              icon: Icon(
-                Icons.sync,
-                color: Colors.white,
-              ),
-              onTap: () {},
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            SquareTextFieldWidget(
-              onChanged: (str) {},
-              onSubmited: (str) {},
-              inputType: TextInputType.text,
-              inputAction: TextInputAction.done,
-              hintText: "Write name",
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            CountrySelectionTextField(
-              onChanged: (str) {},
-              onSubmited: (str) {},
-            ),
-            SizedBox(
-              height: 16,
-            ),
-            PasswordFormField(
-              hintText: "Type Password",
-              inputAction: TextInputAction.done,
-              onChanged: (str) {},
-              onSubmited: (str) {},
-              myController: TextEditingController(),
-            ),
-            SizedBox(
-              height: 32,
-            ),*/
-            Icon(
-              Viiticons.home,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.work,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.loved,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.star,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.history,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.location,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.info,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.promo,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.payment,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.master_card,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.visa_card,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.card,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.photo_camera,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.chat,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-            Icon(
-              Viiticons.share_eta,
-              size: 32,
-              color: kAccentColor,
-            ),
-            SizedBox(
-              height: 6,
-            ),
-          ],
-        ),
-      ),
-    );
-  }
+//   _buildTempleWidgetsDemo() {
+//     return SingleChildScrollView(
+//       child: Container(
+//         width: 120,
+//         child: Column(
+//           children: <Widget>[
+//             /*ViitAppBar(
+//               leadingWidget: ViitAppBarIconWidget(),
+//               titleWidget: ViitTitleWidget("Add Favorite Address"),
+//               onLeadingPressed: () {
+//                 Navigator.of(context).pop();
+//               },
+//               isActionWidget: true,
+//               actionWidget: ViitAppBarIconWidget(
+//                 viitAppBarIconType: ViitAppBarIconTypes.ICON,
+//                 myLeadingIcon: Icon(
+//                   CupertinoIcons.delete_solid,
+//                   color: Colors.white,
+//                   size: 28,
+//                 ),
+//                 bgColor: Colors.transparent,
+//               ),
+//               onActionPressed: () {
+//                 print("Press in action icon");
+//               },
+//             ),
+//             ViitAppBarIconWidget(
+//               viitAppBarIconType: ViitAppBarIconTypes.ICON,
+//               myLeadingIcon: Icon(
+//                 Icons.menu,
+//                 color: Colors.white,
+//               ),
+//               bgColor: kPrimaryColor,
+//               iconColor: Colors.white,
+//             ),
+//             LanguageButton(
+//               btnTxt: "English",
+//               btnColor: kAccentColor,
+//               btnOnTap: () {
+//                 print("");
+//               },
+//             ),
+//             SizedBox(
+//               height: 12,
+//             ),
+//             LanguageButton(
+//               btnTxt: "French",
+//               btnOnTap: () {
+//                 print("");
+//               },
+//               isShowIcon: true,
+//             ),
+//             SocialMediaWidget(
+//               assetPath: "assets/google.png",
+//               bgColor: kSocialBg,
+//             ),
+//             SizedBox(
+//               height: 16,
+//             ),
+//             FABButton(
+//               bgColor: kAccentColor,
+//               icon: Icon(
+//                 Icons.sync,
+//                 color: Colors.white,
+//               ),
+//               onTap: () {},
+//             ),
+//             SizedBox(
+//               height: 16,
+//             ),
+//             SquareTextFieldWidget(
+//               onChanged: (str) {},
+//               onSubmited: (str) {},
+//               inputType: TextInputType.text,
+//               inputAction: TextInputAction.done,
+//               hintText: "Write name",
+//             ),
+//             SizedBox(
+//               height: 16,
+//             ),
+//             CountrySelectionTextField(
+//               onChanged: (str) {},
+//               onSubmited: (str) {},
+//             ),
+//             SizedBox(
+//               height: 16,
+//             ),
+//             PasswordFormField(
+//               hintText: "Type Password",
+//               inputAction: TextInputAction.done,
+//               onChanged: (str) {},
+//               onSubmited: (str) {},
+//               myController: TextEditingController(),
+//             ),
+//             SizedBox(
+//               height: 32,
+//             ),*/
+//             Icon(
+//               Viiticons.home,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.work,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.loved,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.star,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.history,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.location,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.info,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.promo,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.payment,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.master_card,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.visa_card,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.card,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.photo_camera,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.chat,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//             Icon(
+//               Viiticons.share_eta,
+//               size: 32,
+//               color: kAccentColor,
+//             ),
+//             SizedBox(
+//               height: 6,
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
 }

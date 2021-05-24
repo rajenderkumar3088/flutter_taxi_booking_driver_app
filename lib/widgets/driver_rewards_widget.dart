@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
 class DriverProfileRewardsWidget extends StatelessWidget {
   final String driverName;
@@ -65,7 +64,7 @@ class DriverProfileRewardsWidget extends StatelessWidget {
                         width: 5,
                       ),
                       Text(
-                        "${driverRating}",
+                        "$driverRating",
                         style: Theme.of(context).textTheme.caption.copyWith(
                             color: Color(0xff060518),
                             fontSize: 15,

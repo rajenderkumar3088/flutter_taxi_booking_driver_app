@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
- class Cross extends StatefulWidget {
+class Cross extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => CrossState();
 }
@@ -13,8 +13,8 @@ class CrossState extends State<Cross> with SingleTickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    var controller = AnimationController(
-        duration: Duration(seconds: 3), vsync: this);
+    var controller =
+        AnimationController(duration: Duration(seconds: 3), vsync: this);
 
     animation = Tween(begin: 0.0, end: 1.0).animate(controller)
       ..addListener(() {
@@ -34,10 +34,8 @@ class CrossState extends State<Cross> with SingleTickerProviderStateMixin {
   @override
   void dispose() {
     super.dispose();
-
   }
-    
- }
+}
 
 class CrossPainter extends CustomPainter {
   Paint _paint;
@@ -52,18 +50,16 @@ class CrossPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-     double leftLineFraction, rightLineFraction;
+    double leftLineFraction;
 
     if (_fraction < .5) {
       leftLineFraction = _fraction / .5;
-      rightLineFraction = 0.0;
-    }else{
+    } else {
       leftLineFraction = 1.0;
-      rightLineFraction = (_fraction - .5 ) /.5;
     }
-     canvas.drawLine(Offset(0.0, 0.0),
-        Offset(size.width * leftLineFraction, 0.0), _paint);
-    }
+    canvas.drawLine(
+        Offset(0.0, 0.0), Offset(size.width * leftLineFraction, 0.0), _paint);
+  }
 
   @override
   bool shouldRepaint(CrossPainter oldDelegate) {

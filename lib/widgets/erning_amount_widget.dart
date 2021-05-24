@@ -12,7 +12,7 @@ class ErningAmountWidget extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
         Text(
-          "${titletxt}",
+          "$titletxt",
           style: Theme.of(context).textTheme.caption.copyWith(
               color: Color(0XFF060518),
               fontSize: 15,
@@ -29,7 +29,7 @@ class ErningAmountWidget extends StatelessWidget {
               width: 3,
             ),
             Text(
-              "${amounttxt}",
+              "$amounttxt",
               style: Theme.of(context).textTheme.caption.copyWith(
                   color: Color(0XFF060518),
                   fontSize: 15,

@@ -14,18 +14,18 @@ class _ErningBarChartWidgetState extends State<ErningBarChartWidget> {
     super.initState();
     setState(() {
       var data = [
-        addcharts("M", 10),
-        addcharts("TU", 12),
-        addcharts("W", 30),
-        addcharts("TH", 5),
-        addcharts("F", 66),
-        addcharts("SA", 60),
-        addcharts("SU", 100),
+        Addcharts("M", 10),
+        Addcharts("TU", 12),
+        Addcharts("W", 30),
+        Addcharts("TH", 5),
+        Addcharts("F", 66),
+        Addcharts("SA", 60),
+        Addcharts("SU", 100),
       ];
       var series = [
         charts.Series(
-          domainFn: (addcharts addcharts, _) => addcharts.lable,
-          measureFn: (addcharts addcharts, _) => addcharts.value,
+          domainFn: (Addcharts addcharts, _) => addcharts.lable,
+          measureFn: (Addcharts addcharts, _) => addcharts.value,
           id: "addcharts",
           data: data,
         ),
@@ -49,9 +49,9 @@ class _ErningBarChartWidgetState extends State<ErningBarChartWidget> {
   }
 }
 
-class addcharts {
+class Addcharts {
   final String lable;
   final int value;
 
-  addcharts(this.lable, this.value);
+  Addcharts(this.lable, this.value);
 }

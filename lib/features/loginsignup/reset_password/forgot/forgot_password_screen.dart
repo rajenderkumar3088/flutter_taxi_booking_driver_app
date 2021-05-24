@@ -7,7 +7,6 @@ import 'package:flutter_taxi_booking_driver_app/widgets/country_selection_textfi
 import 'package:flutter_taxi_booking_driver_app/widgets/fab_button.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/wavy_header_widget.dart';
 
-
 import 'bloc/bloc.dart';
 
 class ForgotPasswordScreen extends StatelessWidget {
@@ -100,7 +99,7 @@ class _ForgotState extends State<Forgot> {
             padding: const EdgeInsets.only(left: 46, right: 46),
             child: Text(
               "Forgot Password",
-              style: Theme.of(context).textTheme.headline.copyWith(
+              style: Theme.of(context).textTheme.headline5.copyWith(
                     color: kLoginBlack,
                     fontSize: 20,
                   ),
@@ -152,7 +151,7 @@ class _ForgotState extends State<Forgot> {
                 child: Text(
                   "Back to Sign In",
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.subhead.copyWith(
+                  style: Theme.of(context).textTheme.subtitle1.copyWith(
                         color: kAccentColor,
                         fontSize: 16,
                       ),

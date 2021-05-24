@@ -116,7 +116,7 @@ class _LoginFaceIDState extends State<LoginFaceID> {
             ),
             child: Text(
               "Allow sign in with Face ID?",
-              style: Theme.of(context).textTheme.title.copyWith(
+              style: Theme.of(context).textTheme.headline6.copyWith(
                     color: kLoginBlack,
                     letterSpacing: 0.47,
                     fontSize: 20,
@@ -185,7 +185,7 @@ class _LoginFaceIDState extends State<LoginFaceID> {
             ),
             child: Text(
               "We will require face recognition after 2 minutes of inactivity. You can change the frequency in app settings.",
-              style: Theme.of(context).textTheme.body2.copyWith(
+              style: Theme.of(context).textTheme.bodyText1.copyWith(
                     color: kTextLoginfaceid,
                     fontSize: 15,
                     letterSpacing: 0.17,
@@ -198,11 +198,11 @@ class _LoginFaceIDState extends State<LoginFaceID> {
     );
   }
 
-  _buildLoadingState() {
-    return Center(
-      child: CircularProgressIndicator(),
-    );
-  }
+  // _buildLoadingState() {
+  //   return Center(
+  //     child: CircularProgressIndicator(),
+  //   );
+  // }
 
   _buildErrorState(errorMsg) {
     return Center(

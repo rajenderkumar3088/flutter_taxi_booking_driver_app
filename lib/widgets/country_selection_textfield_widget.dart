@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_taxi_booking_driver_app/common/my_colors.dart';
 
-
 class CountrySelectionTextField extends StatefulWidget {
   final TextEditingController myController;
   FocusNode myFocusNode;
@@ -76,7 +75,7 @@ class _CountrySelectionTextFieldState extends State<CountrySelectionTextField> {
                             width: 30,
                             child: Image.asset(
                               CountryPickerUtils.getFlagImageAssetPath(
-                                  "${_selectIoCode}"),
+                                  "$_selectIoCode"),
                               height: 20.0,
                               width: 30.0,
                               fit: BoxFit.fitHeight,
@@ -87,7 +86,7 @@ class _CountrySelectionTextFieldState extends State<CountrySelectionTextField> {
                         SizedBox(
                           width: 5,
                         ),
-                        Text("+${_selectPhoneCode}"),
+                        Text("+$_selectPhoneCode"),
                         Icon(
                           Icons.arrow_drop_down,
                           color: kDottedBorder,

@@ -3,11 +3,10 @@ import 'dart:math';
 import 'package:flutter/animation.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart' show timeDilation;
 import 'package:flutter/widgets.dart';
 import 'package:vector_math/vector_math.dart' as Vector;
 
- class ColorCurveBodyTop extends StatefulWidget {
+class ColorCurveBodyTop extends StatefulWidget {
   final Size size;
   final int xOffset;
   final int yOffset;
@@ -59,7 +58,8 @@ class _ColorCurveBodyState extends State<ColorCurveBodyTop>
     animationController.dispose();
     super.dispose();
   }
-   @override
+
+  @override
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
@@ -72,8 +72,7 @@ class _ColorCurveBodyState extends State<ColorCurveBodyTop>
               curve: Curves.easeInOut,
             ),
             builder: (context, child) => new ClipPath(
-              child:
-              Container(
+              child: Container(
                 width: widget.size.width,
                 height: widget.size.height,
                 color: widget.color,
@@ -86,8 +85,6 @@ class _ColorCurveBodyState extends State<ColorCurveBodyTop>
     );
   }
 }
-
-
 
 class ColorCurveBodyBottom extends StatefulWidget {
   final Size size;
@@ -121,14 +118,15 @@ class _ColorCurveBodyStateBottom extends State<ColorCurveBodyBottom>
     animationController.addListener(() {
       animList1.clear();
       for (int i = -2 - widget.xOffset;
-      i <= widget.size.width.toInt() + 2;
-      i++) {
+          i <= widget.size.width.toInt() + 2;
+          i++) {
         animList1.add(new Offset(
             i.toDouble() + widget.xOffset,
             cos((animationController.value * 360 - i) %
-                360 *
-                Vector.degrees2Radians) *
-                20 + widget.yOffset));
+                        360 *
+                        Vector.degrees2Radians) *
+                    20 +
+                widget.yOffset));
       }
     });
     animationController.repeat();
@@ -139,6 +137,7 @@ class _ColorCurveBodyStateBottom extends State<ColorCurveBodyBottom>
     animationController.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Stack(
@@ -152,8 +151,7 @@ class _ColorCurveBodyStateBottom extends State<ColorCurveBodyBottom>
               curve: Curves.easeInOut,
             ),
             builder: (context, child) => new ClipPath(
-              child:
-              Container(
+              child: Container(
                 width: widget.size.width,
                 height: widget.size.height,
                 color: Colors.orange,
@@ -166,7 +164,6 @@ class _ColorCurveBodyStateBottom extends State<ColorCurveBodyBottom>
     );
   }
 }
-
 
 class WaveClipper extends CustomClipper<Path> {
   final double animation;
@@ -186,7 +183,8 @@ class WaveClipper extends CustomClipper<Path> {
     path.close();
     return path;
   }
-   @override
+
+  @override
   bool shouldReclip(WaveClipper oldClipper) =>
       animation != oldClipper.animation;
 }

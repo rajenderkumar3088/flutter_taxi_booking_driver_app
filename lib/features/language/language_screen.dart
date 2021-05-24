@@ -8,7 +8,6 @@ import 'package:flutter_taxi_booking_driver_app/features/language/bloc/language_
 import 'package:flutter_taxi_booking_driver_app/features/onboard/onboard_screen.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/language_button.dart';
 
-
 class LanguageScreen extends StatelessWidget {
   static const String routeName = "/language";
 
@@ -89,7 +88,7 @@ class _LanguageState extends State<Language> {
               ),
               Text(
                 "Select Language",
-                style: Theme.of(context).textTheme.headline.copyWith(
+                style: Theme.of(context).textTheme.headline5.copyWith(
                       color: Colors.white,
                     ),
               ),

@@ -24,7 +24,7 @@ class DropDownWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             Text(
-              "${title}",
+              "$title",
               style: Theme.of(context)
                   .textTheme
                   .caption

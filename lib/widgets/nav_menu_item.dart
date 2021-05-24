@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taxi_booking_driver_app/common/my_colors.dart';
 
-
 class NavMenuItem extends StatelessWidget {
   final IconData icon;
   final String title;
@@ -51,7 +50,7 @@ class NavMenuItem extends StatelessWidget {
               padding: const EdgeInsets.only(left: 12),
               child: Text(
                 title,
-                style: Theme.of(context).textTheme.title.copyWith(
+                style: Theme.of(context).textTheme.headline6.copyWith(
                       color:
                           navDecorationType == NavItemDecorationType.HIGHLIGHTED
                               ? Colors.white

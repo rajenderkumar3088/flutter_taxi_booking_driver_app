@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class SqaureOutlineButtonWidget extends StatelessWidget {
   final String btnTxt;
   final VoidCallback btnOnTap;
@@ -20,6 +21,7 @@ class SqaureOutlineButtonWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // ignore: deprecated_member_use
     return OutlineButton(
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,

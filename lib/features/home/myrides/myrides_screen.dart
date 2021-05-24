@@ -7,7 +7,6 @@ import 'package:flutter_taxi_booking_driver_app/features/home/myrides/upcoming_r
 import 'package:flutter_taxi_booking_driver_app/widgets/droop_down_widget.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/my_ride_tab_widget.dart';
 
-
 class MyRidesScreen extends StatelessWidget {
   static const String routeName = "myride";
 
@@ -109,8 +108,8 @@ class _DatePickerWidgetState extends State<DatePickerWidget> {
       'Sat',
       'San',
     ];
-    List date = new List();
-    List datNameArry = new List();
+    List date = [];
+    List datNameArry = [];
     var lastday = DateTime(2020, 1 + 1, 0);
     for (int i = 0; i < lastday.day; i++) {
       DateTime currentDate = DateTime(2020, 1, i + 1);

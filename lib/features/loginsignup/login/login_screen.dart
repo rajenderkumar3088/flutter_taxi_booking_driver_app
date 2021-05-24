@@ -12,7 +12,6 @@ import 'package:flutter_taxi_booking_driver_app/widgets/fab_button.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/password_textfield.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/wavy_header_widget.dart';
 
-
 import 'bloc/bloc.dart';
 
 class LoginScreen extends StatelessWidget {
@@ -125,7 +124,7 @@ class _LoginState extends State<Login> {
             padding: const EdgeInsets.only(left: 46, right: 46),
             child: Text(
               "Sign In",
-              style: Theme.of(context).textTheme.headline.copyWith(
+              style: Theme.of(context).textTheme.headline5.copyWith(
                     color: kLoginBlack,
                     fontSize: 20,
                   ),
@@ -206,14 +205,14 @@ class _LoginState extends State<Login> {
                           SubmitLoginEvent("", ""),
                         );
                       } else {
-                        Scaffold.of(paramContext).showSnackBar(
+                        ScaffoldMessenger.of(paramContext).showSnackBar(
                           SnackBar(
                             content: Text("Please type password..."),
                           ),
                         );
                       }
                     } else {
-                      Scaffold.of(paramContext).showSnackBar(
+                      ScaffoldMessenger.of(context).showSnackBar(
                         SnackBar(
                           content: Text("Pleas type mobile no..."),
                         ),
@@ -263,7 +262,7 @@ class _LoginState extends State<Login> {
                       color: kLoginBlack,*/
                   TextSpan(
                     text: "Don't have an account? ",
-                    style: Theme.of(context).textTheme.subhead.copyWith(
+                    style: Theme.of(context).textTheme.subtitle1.copyWith(
                           color: kLoginBlack,
                           fontSize: 17,
                           letterSpacing: 0.18,
@@ -271,7 +270,7 @@ class _LoginState extends State<Login> {
                   ),
                   TextSpan(
                     text: "Sign Up",
-                    style: Theme.of(context).textTheme.subhead.copyWith(
+                    style: Theme.of(context).textTheme.subtitle1.copyWith(
                           color: kAccentColor,
                           fontSize: 18,
                         ),

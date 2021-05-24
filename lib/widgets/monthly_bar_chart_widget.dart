@@ -14,23 +14,23 @@ class _ErningBarChartWidgetState extends State<MonthlyYBarChartWidget> {
     super.initState();
     setState(() {
       var data = [
-        addcharts("JA", 10),
-        addcharts("F", 12),
-        addcharts("MAR", 30),
-        addcharts("A", 5),
-        addcharts("MAY", 44),
-        addcharts("JUN", 60),
-        addcharts("JUL", 46),
-        addcharts("AU", 0),
-        addcharts("S", 23),
-        addcharts("O", 99),
-        addcharts("N", 34),
-        addcharts("D", 78),
+        Addcharts("JA", 10),
+        Addcharts("F", 12),
+        Addcharts("MAR", 30),
+        Addcharts("A", 5),
+        Addcharts("MAY", 44),
+        Addcharts("JUN", 60),
+        Addcharts("JUL", 46),
+        Addcharts("AU", 0),
+        Addcharts("S", 23),
+        Addcharts("O", 99),
+        Addcharts("N", 34),
+        Addcharts("D", 78),
       ];
       var series = [
         charts.Series(
-          domainFn: (addcharts addcharts, _) => addcharts.lable,
-          measureFn: (addcharts addcharts, _) => addcharts.value,
+          domainFn: (Addcharts addcharts, _) => addcharts.lable,
+          measureFn: (Addcharts addcharts, _) => addcharts.value,
           id: "addcharts",
           data: data,
         ),
@@ -54,11 +54,11 @@ class _ErningBarChartWidgetState extends State<MonthlyYBarChartWidget> {
   }
 }
 
-class addcharts {
+class Addcharts {
   final String lable;
   final int value;
 
-  addcharts(
+  Addcharts(
     this.lable,
     this.value,
   );

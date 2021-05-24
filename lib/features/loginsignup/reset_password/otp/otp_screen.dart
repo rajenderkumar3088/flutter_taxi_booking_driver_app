@@ -99,7 +99,7 @@ class _OTPState extends State<OTP> {
             padding: const EdgeInsets.only(left: 46, right: 46),
             child: Text(
               "OTP Verification",
-              style: Theme.of(context).textTheme.headline.copyWith(
+              style: Theme.of(context).textTheme.headline5.copyWith(
                     color: kLoginBlack,
                     fontSize: 20,
                   ),
@@ -145,7 +145,7 @@ class _OTPState extends State<OTP> {
                 child: Text(
                   "I didn’t receive a code!",
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.subhead.copyWith(
+                  style: Theme.of(context).textTheme.subtitle1.copyWith(
                         color: kTextLoginfaceid,
                         fontSize: 15,
                       ),
@@ -166,7 +166,7 @@ class _OTPState extends State<OTP> {
                 child: Text(
                   "Resend",
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.subhead.copyWith(
+                  style: Theme.of(context).textTheme.subtitle1.copyWith(
                         color: kAccentColor,
                         fontSize: 16,
                       ),

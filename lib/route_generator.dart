@@ -22,11 +22,10 @@ import 'package:flutter_taxi_booking_driver_app/features/loginsignup/reset_passw
 import 'package:flutter_taxi_booking_driver_app/features/loginsignup/signup/signup_screen.dart';
 import 'package:flutter_taxi_booking_driver_app/features/onboard/onboard_screen.dart';
 
-
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
     // Getting arguments passed in while calling Navigator.pushNamed
-    final args = settings.arguments;
+    // final args = settings.arguments;
 
     switch (settings.name) {
       case LanguageScreen.routeName:

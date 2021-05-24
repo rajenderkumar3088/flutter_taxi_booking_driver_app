@@ -6,7 +6,6 @@ import 'package:flutter_taxi_booking_driver_app/widgets/fab_button.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/password_textfield.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/wavy_header_widget.dart';
 
-
 import 'bloc/bloc.dart';
 
 class ResetPassScreen extends StatelessWidget {
@@ -105,7 +104,7 @@ class _ResetPassState extends State<ResetPass> {
             padding: const EdgeInsets.only(left: 46, right: 46),
             child: Text(
               "Reset Password",
-              style: Theme.of(context).textTheme.headline.copyWith(
+              style: Theme.of(context).textTheme.headline5.copyWith(
                     color: kLoginBlack,
                     fontSize: 20,
                   ),

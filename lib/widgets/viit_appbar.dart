@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taxi_booking_driver_app/common/my_colors.dart';
 
-
 class ViitAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget leadingWidget;
   final Widget titleWidget;
@@ -121,7 +120,7 @@ class ViitTitleWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       title,
-      style: Theme.of(context).textTheme.title.copyWith(
+      style: Theme.of(context).textTheme.headline6.copyWith(
             color: Colors.white,
             fontSize: 22,
           ),

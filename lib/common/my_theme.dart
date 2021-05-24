@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_taxi_booking_driver_app/common/my_colors.dart';
 
-
 get kAppThemeData => ThemeData(
       pageTransitionsTheme: PageTransitionsTheme(
         builders: {
@@ -23,17 +22,17 @@ get kAppThemeData => ThemeData(
       iconTheme: IconThemeData(color: kBlack),
       fontFamily: "GT-Eesti",
       textTheme: TextTheme(
-        headline: TextStyle(
+        headline5: TextStyle(
           color: kBlack,
         ),
-        title: TextStyle(
+        headline6: TextStyle(
           fontStyle: FontStyle.normal,
           color: kBlack,
         ),
-        body1: TextStyle(
+        bodyText2: TextStyle(
           color: kBlack,
         ),
-        subtitle: TextStyle(
+        subtitle2: TextStyle(
           color: kBlack,
         ),
       ),

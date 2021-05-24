@@ -4,7 +4,6 @@ import 'package:flutter_taxi_booking_driver_app/common/my_colors.dart';
 import 'package:flutter_taxi_booking_driver_app/common/viiticons_icons.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/nav_menu_item.dart';
 
-
 class MyNavDrawer extends StatelessWidget {
   final BuildContext context;
   final List<NavItemModel> myListItems;
@@ -177,7 +176,7 @@ class MyNavDrawer extends StatelessWidget {
             ),
             Text(
               "Drive with Viit",
-              style: Theme.of(context).textTheme.subtitle.copyWith(
+              style: Theme.of(context).textTheme.subtitle2.copyWith(
                     color: Colors.white,
                     fontSize: 16,
                   ),
@@ -210,7 +209,7 @@ class MyNavDrawer extends StatelessWidget {
               ),
               title: Text(
                 "Melissa Brunt",
-                style: Theme.of(context).textTheme.title.copyWith(
+                style: Theme.of(context).textTheme.headline6.copyWith(
                       fontSize: 18,
                       color: Colors.white,
                     ),
@@ -242,7 +241,7 @@ class MyNavDrawer extends StatelessWidget {
                       "4.3",
                       style: Theme.of(context)
                           .textTheme
-                          .subtitle
+                          .subtitle2
                           .copyWith(color: Colors.white),
                     ),
                   ],

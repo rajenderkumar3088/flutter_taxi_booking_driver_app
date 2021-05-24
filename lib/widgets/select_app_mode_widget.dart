@@ -15,7 +15,7 @@ class SelectAppModeWidget extends StatelessWidget {
     @required this.myOnTap,
     @required this.modeIndex,
     @required this.modeName,
-  })  : super(key: key);
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +45,7 @@ class SelectAppModeWidget extends StatelessWidget {
                 groupValue: selectedMode,
                 onChanged: myOnTap),
             Text(
-              "${modeName}",
+              "$modeName",
               style: Theme.of(context).textTheme.caption.copyWith(
                   fontWeight: FontWeight.w500,
                   color: Color(0XFF275787),

@@ -5,7 +5,6 @@ import 'package:flutter_taxi_booking_driver_app/features/loginsignup/login/login
 import 'package:flutter_taxi_booking_driver_app/widgets/fab_button.dart';
 import 'package:flutter_taxi_booking_driver_app/widgets/wave_animation_widget.dart';
 
-
 class OnboardWidget extends StatefulWidget {
   var images = [""];
   var titles = [""];
@@ -143,7 +142,7 @@ class _OnboardWidgetState extends State<OnboardWidget> {
                           Text(
                             widget.titles[index],
                             style:
-                                Theme.of(context).textTheme.display1.copyWith(
+                                Theme.of(context).textTheme.headline4.copyWith(
                                       color: Colors.white,
                                       fontSize: 32,
                                       fontWeight: FontWeight.w500,
@@ -158,14 +157,16 @@ class _OnboardWidgetState extends State<OnboardWidget> {
                             opacity: 0.8,
                             child: Text(
                               widget.subtitles[index],
-                              style:
-                                  Theme.of(context).textTheme.headline.copyWith(
-                                        color: Colors.white,
-                                        fontSize: 18,
-                                        letterSpacing: 1.3,
-                                        fontWeight: FontWeight.normal,
-                                        height: 1.3,
-                                      ),
+                              style: Theme.of(context)
+                                  .textTheme
+                                  .headline5
+                                  .copyWith(
+                                    color: Colors.white,
+                                    fontSize: 18,
+                                    letterSpacing: 1.3,
+                                    fontWeight: FontWeight.normal,
+                                    height: 1.3,
+                                  ),
                             ),
                           )
                         ],
@@ -190,7 +191,7 @@ class _OnboardWidgetState extends State<OnboardWidget> {
                       onTap: widget.myOnSkipPressed,
                       child: Text(
                         "Skip",
-                        style: Theme.of(context).textTheme.title.copyWith(
+                        style: Theme.of(context).textTheme.headline6.copyWith(
                               color: kAccentColor,
                             ),
                       ),
@@ -262,7 +263,7 @@ class _OnboardWidgetState extends State<OnboardWidget> {
 
     for (int i = 0; i < 3; i++) {
       circleList.add(
-        CircleBarWidget(selectedIndex == i, () {
+        circleBarWidget(selectedIndex == i, () {
           _controller.animateToPage(
             i,
             duration: const Duration(milliseconds: 400),
@@ -277,7 +278,7 @@ class _OnboardWidgetState extends State<OnboardWidget> {
     return circleList;
   }
 
-  Widget CircleBarWidget(bool isActive, var _myOnTap) {
+  Widget circleBarWidget(bool isActive, var _myOnTap) {
     print("Welcome:circleBar");
 
     return GestureDetector(
